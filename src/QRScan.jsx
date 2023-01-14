@@ -34,7 +34,7 @@ function QRScan({ onScan }) {
       onScan(result?.getText());
     }
 
-    if (!!error && error.name !== "e") {
+    if (!!error && error.message) {
       setError(true);
     }
   };
