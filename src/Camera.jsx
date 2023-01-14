@@ -22,7 +22,7 @@ function Camera() {
   return (
     <Container>
       <QrReader
-        constraints={{ facingMode: "user" }}
+        constraints={{ facingMode: "environment" }}
         onResult={(result, error) => {
           if (!!result) {
             setResult(result?.getText());
